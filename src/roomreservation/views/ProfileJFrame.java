@@ -40,6 +40,7 @@ public class ProfileJFrame extends javax.swing.JFrame {
         MenuBar menuBar = new MenuBar(this);  // Pasamos 'this' para que el menú conozca el JFrame actual
         setJMenuBar(menuBar.getMenuBar());  // Configura el JMenuBar en el JFrame
 
+<<<<<<< HEAD
         // Llenar los campos automáticamente con los datos del usuario logueado
         if (RoomReservation.loggedInUser != null) {
             txtNombre.setText(RoomReservation.loggedInUser.getName());
@@ -48,6 +49,19 @@ public class ProfileJFrame extends javax.swing.JFrame {
         } else {
             System.out.println("No hay un usuario logueado.");
         }
+=======
+        // Colocar el resto del código para el JFrame
+        System.out.println("Usuario actual: " + RoomReservation.loggedInUser);
+
+    }
+      private JMenuItem createMenuItem(String text, Font font) {
+        JMenuItem menuItem = new JMenuItem(text);
+        menuItem.setOpaque(true);
+        menuItem.setFont(font);
+        menuItem.setForeground(Color.white);
+        menuItem.setBackground(mColorFondo);
+        return menuItem;
+>>>>>>> origin/main
     }
 
     /**
